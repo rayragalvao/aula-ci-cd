@@ -1,0 +1,12 @@
+build:
+  name: Build iOS Simulator
+  on:
+    push:
+      branches: ['main']
+  jobs:
+    build:
+      name: Build iOS
+      type: build
+      params:
+        platform: ios
+        profile: preview
